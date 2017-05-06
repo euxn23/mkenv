@@ -1,4 +1,3 @@
-
 if [ "$(uname)" == 'Darwin' ]; then
 
 if !(type brew) &>/dev/null; then
