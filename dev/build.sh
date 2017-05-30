@@ -1,6 +1,6 @@
 cat <<EOF > install.sh
 
-if [ "$(uname)" == 'Darwin' ]; then
+if [ "\$(uname)" == 'Darwin' ]; then
 
 $(cat lib/brew.sh)
 
