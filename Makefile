@@ -27,3 +27,6 @@ ruby:
 scala:
 	bash lib/scala.sh
 
+build:
+	bash dev/build.sh
+
