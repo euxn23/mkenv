@@ -3,7 +3,8 @@ if !(type brew) &>/dev/null; then
 fi
 brew update
 brew upgrade
-brew install git mysql redis wget
+brew install autoconf automake bison gcc git icu4c jpeg libiconv libmcrypt libpng libxml mysql openssl re2c redis wget
+brew link --force bison icu4c libxml2 openssl
 brew tap caskroom/cask
 brew cask install virtualbox vagrant docker
 
