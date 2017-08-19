@@ -2,6 +2,6 @@ bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/bins
 source ~/.gvm/scripts/gvm
 gvm install go1.4 --binary
 gvm use go1.4
-gvm install `cat lib/versions/golang`
-gvm use `cat lib/versions/golang` --default
+gvm install `cat lib/versions/go`
+gvm use `cat lib/versions/go` --default
 

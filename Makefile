@@ -14,8 +14,8 @@ brew:
 
 elixir:
 	bash lib/elixir.sh
-golang:
-	bash lib/golang.sh
+go:
+	bash lib/go.sh
 haskell:
 	bash lib/haskell.sh
 node:

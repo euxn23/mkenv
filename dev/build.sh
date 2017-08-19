@@ -17,7 +17,7 @@ $(cat lib/prerequirements.sh)
 
 $(cat lib/elixir.sh)
 
-$(cat lib/golang.sh)
+$(cat lib/go.sh)
 
 $(cat lib/haskell.sh)
 
