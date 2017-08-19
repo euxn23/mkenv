@@ -23,6 +23,8 @@ $(cat lib/haskell.sh)
 
 $(cat lib/node.sh)
 
+$(cat lib/php.sh)
+
 $(cat lib/python.sh)
 
 $(cat lib/ruby.sh)

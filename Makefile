@@ -20,6 +20,8 @@ haskell:
 	bash lib/haskell.sh
 node:
 	bash lib/node.sh
+php:
+	bash lib/php.sh
 python:
 	bash lib/python.sh
 ruby:
