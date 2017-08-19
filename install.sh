@@ -60,27 +60,27 @@ bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/bins
 source ~/.gvm/scripts/gvm
 gvm install go1.4 --binary
 gvm use go1.4
-gvm install `cat lib/versions/go`
-gvm use `cat lib/versions/go` --default
+gvm install $(cat lib/versions/go)
+gvm use $(cat lib/versions/go) --default
 
 curl -sSL https://get.haskellstack.org/ | sh
 
 git clone https://github.com/creationix/nvm.git ~/.nvm
 source ~/.nvm/nvm.sh
-nvm install `cat lib/versions/node`
-nvm alias default `cat lib/versions/node`
+nvm install $(cat lib/versions/node)
+nvm alias default $(cat lib/versions/node)
 
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 export PATH=~/.pyenv/bin:$PATH
 pyenv install miniconda3-latest
-conda create -n python2 python=`cat lib/versions/python2`
-conda create -n python3 python=`cat lib/versions/python3`
+conda create -n python2 python=$(cat lib/versions/python2)
+conda create -n python3 python=$(cat lib/versions/python3)
 pyenv global miniconda3-latest/envs/python3 miniconda3-latest/envs/python2
 
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 export PATH=~/.rbenv/bin:$PATH
-rbenv install `cat lib/versions/ruby`
+rbenv install $(cat lib/versions/ruby)
 
 if [ "$(uname)" == 'Darwin' ]; then
   brew update
