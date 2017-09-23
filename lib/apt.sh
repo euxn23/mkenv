@@ -1,7 +1,7 @@
 sudo add-apt-repository -y ppa:git-core/ppa
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y bison build-essential curl git redis-tools mysql-client
+sudo apt install -y bison build-essential curl git redis-tools mysql-client zsh
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository -y "https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
