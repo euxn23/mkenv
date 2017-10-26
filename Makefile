@@ -1,6 +1,6 @@
 .PHONY: all
 
-all: distro prerequirements elixir golang haskell node python ruby scala
+all: distro prerequirements elixir go haskell node python ruby scala
 
 prerequirements:
 	bash lib/prerequirements.sh
