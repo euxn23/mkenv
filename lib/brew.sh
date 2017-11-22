@@ -6,5 +6,5 @@ brew upgrade
 brew install autoconf automake bison gcc git icu4c jpeg libiconv libmcrypt libpng libxml2 mysql openssl re2c redis wget
 brew link --force bison icu4c libxml2 openssl
 brew tap caskroom/cask
-brew cask install virtualbox vagrant docker
+brew cask install docker
 
