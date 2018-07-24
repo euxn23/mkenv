@@ -1,7 +1,6 @@
-bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+GVM_NO_UPDATE_PROFILE=true bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 source ~/.gvm/scripts/gvm
-gvm install go1.4 --binary
-gvm use go1.4
-gvm install $(cat lib/versions/go) --binary
-gvm use $(cat lib/versions/go) --default
+go=$(cat lib/versions/go)
+gvm install $go --binary
+gvm use $go --default
 
